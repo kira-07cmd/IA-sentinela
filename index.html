@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentinela — Monitoramento inteligente de máquinas</title>
+<meta name="description" content="Sentinela conecta os CLPs da fábrica a duas IAs: uma monitora as máquinas e alerta os técnicos, outra analisa a produção ao fim de cada turno.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F5A524' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z'/%3E%3Cpath d='M8 12h2l1.5-3 2 6 1.5-3h1'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="top">
+<nav class="wrap" aria-label="Principal">
+<a href="#topo" class="logo">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8 12h2l1.5-3 2 6 1.5-3h1"/></svg>
+<span>Sentinela</span>
+</a>
+<div class="links">
+<a href="#ias">As duas IAs</a>
+<a href="#painel">Painel dos técnicos</a>
+<a href="#como-funciona">Como funciona</a>
+<a href="#seguranca">Segurança</a>
+<a href="#contato" class="btn">Solicitar demonstração</a>
+</div>
+</nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="topo" class="wrap hero">
+<div style="flex:1 1 480px;min-width:0">
+<p class="eyebrow">Manutenção preditiva com IA</p>
+<h1>Saiba qual máquina parou, e por quê, no mesmo instante.</h1>
+<p class="lead">O Sentinela conecta os CLPs da sua fábrica a duas inteligências artificiais: uma vigia as máquinas e envia cada falha ao painel dos técnicos em tempo real; a outra analisa a produção ao fim de cada turno e mostra onde você está perdendo tempo.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px">
+<a href="#contato" class="btn">Agendar um piloto</a>
+<a href="painel.html" class="btn btn-ghost">Ver o painel dos técnicos</a>
+</div>
+</div>
+
+<div class="card" style="flex:1 1 420px;min-width:0;overflow:hidden">
+<div class="mono" style="display:flex;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line2);font-size:13px;color:var(--muted2)">
+<span>IA Vigia · Linha 2</span><span>ao vivo</span>
+</div>
+<div style="padding:18px 20px;background:#2B1F0E;border-bottom:1px solid #4A3512">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4"/><path d="M12 17.5v.01"/></svg>
+<strong class="disp" style="font-size:17px;color:#FFD38A">Parada detectada · Injetora 07</strong>
+</div>
+<p class="mono" style="margin:0;font-size:14px;color:#E8D9C0">CLP-017 · alarme E-214 · sobretemperatura no motor</p>
+<p style="margin:6px 0 0;font-size:14px;color:#D9C9AE">Anomalia de vibração identificada 18 min antes da parada.</p>
+</div>
+<div style="padding:6px 20px 8px">
+<div class="mrow"><div><div>Injetora 07</div><div class="mono small">CLP-017</div></div><span class="badge b-crit">PARADA</span></div>
+<div class="mrow"><div><div>Prensa 03</div><div class="mono small">CLP-009</div></div><span class="badge b-warn">ATENÇÃO</span></div>
+<div class="mrow"><div><div>Esteira 02</div><div class="mono small">CLP-004</div></div><span class="badge b-ok">RODANDO</span></div>
+<div class="mrow" style="border-bottom:none"><div><div>Torno 11</div><div class="mono small">CLP-021</div></div><span class="badge b-ok">RODANDO</span></div>
+</div>
+<p class="small" style="margin:0;padding:6px 20px 14px">Tela ilustrativa</p>
+</div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="band">
+<div class="wrap" style="padding-top:80px;padding-bottom:80px">
+<h2 style="max-width:760px">Parada inesperada custa caro, e quase sempre dá sinais antes.</h2>
+<p class="lead" style="margin:0 0 44px">Hoje a falha costuma ser descoberta quando a linha já parou. Quem descobre é o operador, que avisa a manutenção, que vai até a máquina procurar o problema. O Sentinela encurta cada etapa desse caminho.</p>
+<div class="grid">
+<div class="card" style="padding:26px"><p class="disp" style="margin:0 0 8px;font-size:20px;font-weight:600">Falha descoberta tarde</p><p style="margin:0;color:var(--muted2);font-size:15px">Sem monitoramento contínuo, a máquina só é notada quando a produção já parou.</p></div>
+<div class="card" style="padding:26px"><p class="disp" style="margin:0 0 8px;font-size:20px;font-weight:600">Diagnóstico demorado</p><p style="margin:0;color:var(--muted2);font-size:15px">O técnico perde tempo descobrindo qual equipamento e qual componente falhou.</p></div>
+<div class="card" style="padding:26px"><p class="disp" style="margin:0 0 8px;font-size:20px;font-weight:600">Histórico perdido</p><p style="margin:0;color:var(--muted2);font-size:15px">Motivos de parada anotados em papel não viram aprendizado para evitar a próxima.</p></div>
+</div>
+</div>
+</section>
+
+<!-- AS DUAS IAs -->
+<section id="ias" class="wrap" style="padding-top:96px;padding-bottom:96px">
+<p class="eyebrow">O produto</p>
+<h2 style="margin-bottom:48px">Duas IAs, dois trabalhos.</h2>
+<div class="row">
+
+<article class="card" style="flex:1 1 440px;min-width:0;padding:36px;border-radius:14px">
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+<div style="width:52px;height:52px;border-radius:10px;background:#2B1F0E;display:flex;align-items:center;justify-content:center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+</div>
+<div><p class="mono" style="margin:0;font-size:13px;color:var(--muted2)">IA 01 · Tempo real</p><h3 style="margin:0;font-size:28px">IA Vigia</h3></div>
+</div>
+<p style="margin:0 0 22px;color:var(--muted)">Monitora todas as máquinas, 24 horas por dia. Quando algo sai do normal, avisa a pessoa certa com a informação certa.</p>
+<ul class="check">
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Identifica a máquina pelo <strong>ID do CLP</strong>, com setor, alarme e horário exato</span></li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Detecta <strong>anomalias</strong> em temperatura, vibração e corrente antes da parada</span></li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Envia o alerta direto para o <strong>painel dos técnicos</strong> de manutenção, com aviso no celular</span></li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5A524" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Sugere a <strong>causa provável</strong> com base nos manuais e no histórico</span></li>
+</ul>
+</article>
+
+<article class="card" style="flex:1 1 440px;min-width:0;padding:36px;border-radius:14px">
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+<div style="width:52px;height:52px;border-radius:10px;background:#13263A;display:flex;align-items:center;justify-content:center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6CB8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+</div>
+<div><p class="mono" style="margin:0;font-size:13px;color:var(--muted2)">IA 02 · Fim do turno</p><h3 style="margin:0;font-size:28px">IA Analista</h3></div>
+</div>
+<p style="margin:0 0 22px;color:var(--muted)">Ao final de cada turno, reúne tudo o que aconteceu e entrega um relatório de produção pronto para a reunião.</p>
+<ul class="check">
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6CB8FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Calcula <strong>OEE, MTBF e MTTR</strong> por máquina, linha e turno</span></li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6CB8FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Mostra o <strong>ranking de paradas</strong>: quais máquinas e motivos mais tomaram tempo</span></li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6CB8FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Compara a produção real com a meta e com turnos anteriores</span></li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6CB8FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Recomenda <strong>ações de manutenção</strong> para o próximo turno</span></li>
+</ul>
+</article>
+
+</div>
+</section>
+
+<!-- PAINEL DOS TÉCNICOS -->
+<section id="painel" class="wrap" style="padding-bottom:96px">
+<div class="card" style="padding:40px;border-radius:14px;display:flex;flex-wrap:wrap;gap:40px;align-items:center">
+<div style="flex:1 1 460px;min-width:0">
+<p class="eyebrow">Painel dos técnicos</p>
+<h2 style="font-size:34px;line-height:1.15;margin-bottom:16px">O alerta chega pronto para a manutenção agir.</h2>
+<p style="margin:0;color:var(--muted)">Cada parada vira um chamado no painel dos técnicos, com a máquina, o ID do CLP, o código de alarme, a causa provável e os passos sugeridos. O técnico assume o chamado, resolve e registra o motivo. Esse registro alimenta o treinamento da IA.</p>
+</div>
+<div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:12px;font-size:15px">
+<div style="display:flex;gap:12px"><span class="mono" style="color:var(--accent)">1</span><span>IA Vigia detecta a falha</span></div>
+<div style="display:flex;gap:12px"><span class="mono" style="color:var(--accent)">2</span><span>Chamado aparece no painel e no celular</span></div>
+<div style="display:flex;gap:12px"><span class="mono" style="color:var(--accent)">3</span><span>Técnico assume e segue os passos</span></div>
+<div style="display:flex;gap:12px"><span class="mono" style="color:var(--accent)">4</span><span>Motivo registrado vira histórico</span></div>
+<a href="painel.html" class="btn" style="margin-top:8px;align-self:flex-start">Ver o painel dos técnicos</a>
+</div>
+</div>
+</section>
+
+<!-- RELATÓRIO DE TURNO -->
+<section class="band">
+<div class="wrap" style="padding-top:88px;padding-bottom:88px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+<div style="flex:1 1 340px;min-width:0">
+<p class="eyebrow" style="color:var(--blue)">IA Analista</p>
+<h2 style="font-size:38px;line-height:1.15;margin-bottom:18px">O turno acabou. O relatório já está pronto.</h2>
+<p style="margin:0;color:var(--muted)">Sem planilha montada à mão. Os supervisores recebem só os dados do seu setor, protegidos por Row Level Security no banco de dados.</p>
+</div>
+<div class="card" style="flex:1 1 560px;min-width:0;padding:28px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-bottom:22px">
+<strong class="disp" style="font-size:19px">Relatório · Turno B · Linha 2</strong>
+<span class="mono small" style="font-size:13px">14:00 – 22:00</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin-bottom:26px">
+<div class="info" style="padding:16px"><p style="font-size:13px;color:var(--muted2)">OEE</p><p class="disp" style="font-size:28px;font-weight:600">78%</p></div>
+<div class="info" style="padding:16px"><p style="font-size:13px;color:var(--muted2)">Peças</p><p class="disp" style="font-size:28px;font-weight:600">4.820</p></div>
+<div class="info" style="padding:16px"><p style="font-size:13px;color:var(--muted2)">MTBF</p><p class="disp" style="font-size:28px;font-weight:600">3h10</p></div>
+<div class="info" style="padding:16px"><p style="font-size:13px;color:var(--muted2)">MTTR</p><p class="disp" style="font-size:28px;font-weight:600">14 min</p></div>
+</div>
+<p style="margin:0 0 12px;font-size:14px;color:var(--muted2)">Tempo parado por máquina (min)</p>
+<div id="bars" style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px"></div>
+<div style="background:#13263A;border-radius:8px;padding:14px 16px;font-size:14px;color:#CFE5FF"><strong>Recomendação:</strong> inspecionar o rolamento do motor da Injetora 07 antes do Turno C.</div>
+<p class="small" style="margin:14px 0 0">Valores ilustrativos</p>
+</div>
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="wrap" style="padding-top:96px;padding-bottom:96px">
+<p class="eyebrow">Arquitetura</p>
+<h2 style="margin-bottom:48px">Como o Sentinela se conecta às máquinas</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<div class="card" style="padding:24px;border-radius:10px"><p class="mono" style="margin:0 0 14px;font-size:14px;color:var(--accent)">01</p><p class="disp" style="margin:0 0 8px;font-size:19px;font-weight:600">CLPs</p><p style="margin:0;font-size:15px;color:var(--muted2)">Cada máquina é identificada pelo ID do seu CLP, em uma rede de chão de fábrica isolada.</p></div>
+<div class="card" style="padding:24px;border-radius:10px"><p class="mono" style="margin:0 0 14px;font-size:14px;color:var(--accent)">02</p><p class="disp" style="margin:0 0 8px;font-size:19px;font-weight:600">Gateway de borda</p><p style="margin:0;font-size:15px;color:var(--muted2)">Lê os dados dos CLPs via OPC UA ou Modbus TCP, somente em modo leitura.</p></div>
+<div class="card" style="padding:24px;border-radius:10px"><p class="mono" style="margin:0 0 14px;font-size:14px;color:var(--accent)">03</p><p class="disp" style="margin:0 0 8px;font-size:19px;font-weight:600">MQTT + firewall</p><p style="margin:0;font-size:15px;color:var(--muted2)">Os dados atravessam uma DMZ industrial até a rede corporativa.</p></div>
+<div class="card" style="padding:24px;border-radius:10px"><p class="mono" style="margin:0 0 14px;font-size:14px;color:var(--accent)">04</p><p class="disp" style="margin:0 0 8px;font-size:19px;font-weight:600">Banco com RLS</p><p style="margin:0;font-size:15px;color:var(--muted2)">Séries temporais guardadas por clp_id; cada usuário vê só o seu setor.</p></div>
+<div class="card" style="padding:24px;border-radius:10px"><p class="mono" style="margin:0 0 14px;font-size:14px;color:var(--accent)">05</p><p class="disp" style="margin:0 0 8px;font-size:19px;font-weight:600">IAs + painel</p><p style="margin:0;font-size:15px;color:var(--muted2)">A IA Vigia envia o alerta ao painel dos técnicos e a IA Analista gera o relatório do turno.</p></div>
+</div>
+</section>
+
+<!-- SEGURANÇA -->
+<section id="seguranca" class="band">
+<div class="wrap" style="padding-top:88px;padding-bottom:88px">
+<h2>Segurança desde a rede até o dado</h2>
+<p class="lead" style="margin:0 0 44px">A IA observa as máquinas, mas nunca envia comandos a elas. Cada camada tem a sua proteção.</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+<div style="border-top:2px solid var(--line3);padding-top:18px"><p class="disp" style="margin:0 0 6px;font-size:19px;font-weight:600">Rede segmentada</p><p style="margin:0;font-size:15px;color:var(--muted2)">Zonas e conduítes conforme a norma ISA/IEC 62443.</p></div>
+<div style="border-top:2px solid var(--line3);padding-top:18px"><p class="disp" style="margin:0 0 6px;font-size:19px;font-weight:600">Somente leitura</p><p style="margin:0;font-size:15px;color:var(--muted2)">As IAs não escrevem nos CLPs nem alteram a operação.</p></div>
+<div style="border-top:2px solid var(--line3);padding-top:18px"><p class="disp" style="margin:0 0 6px;font-size:19px;font-weight:600">Row Level Security</p><p style="margin:0;font-size:15px;color:var(--muted2)">Acesso aos dados filtrado por clp_id e setor de cada usuário.</p></div>
+<div style="border-top:2px solid var(--line3);padding-top:18px"><p class="disp" style="margin:0 0 6px;font-size:19px;font-weight:600">Comunicação criptografada</p><p style="margin:0;font-size:15px;color:var(--muted2)">OPC UA com certificados entre gateway e máquinas.</p></div>
+</div>
+</div>
+</section>
+
+<!-- IMPLANTAÇÃO -->
+<section id="implantacao" class="wrap" style="padding-top:96px;padding-bottom:96px">
+<h2>Comece pequeno, cresça com dados</h2>
+<p class="lead" style="margin:0 0 44px">A implantação começa com um piloto em uma ou duas máquinas críticas. A IA aprende com o histórico da sua própria fábrica.</p>
+<ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+<li style="border-left:1px solid var(--line2);padding:0 20px 24px"><p class="mono" style="margin:0 0 4px;font-size:13px;color:var(--accent)">Fase 1</p><p class="disp" style="margin:0 0 6px;font-size:18px;font-weight:600">Piloto</p><p style="margin:0;font-size:15px;color:var(--muted2)">1 ou 2 máquinas críticas conectadas.</p></li>
+<li style="border-left:1px solid var(--line2);padding:0 20px 24px"><p class="mono" style="margin:0 0 4px;font-size:13px;color:var(--accent)">Fase 2</p><p class="disp" style="margin:0 0 6px;font-size:18px;font-weight:600">Coleta e painel</p><p style="margin:0;font-size:15px;color:var(--muted2)">OPC UA, banco com RLS e dashboard.</p></li>
+<li style="border-left:1px solid var(--line2);padding:0 20px 24px"><p class="mono" style="margin:0 0 4px;font-size:13px;color:var(--accent)">Fase 3</p><p class="disp" style="margin:0 0 6px;font-size:18px;font-weight:600">IA Vigia</p><p style="margin:0;font-size:15px;color:var(--muted2)">Regras, detecção de anomalias e painel dos técnicos.</p></li>
+<li style="border-left:1px solid var(--line2);padding:0 20px 24px"><p class="mono" style="margin:0 0 4px;font-size:13px;color:var(--accent)">Fase 4</p><p class="disp" style="margin:0 0 6px;font-size:18px;font-weight:600">IA Analista</p><p style="margin:0;font-size:15px;color:var(--muted2)">Relatórios e previsão com o histórico.</p></li>
+<li style="border-left:1px solid var(--line2);padding:0 20px 24px"><p class="mono" style="margin:0 0 4px;font-size:13px;color:var(--accent)">Fase 5</p><p class="disp" style="margin:0 0 6px;font-size:18px;font-weight:600">Expansão</p><p style="margin:0;font-size:15px;color:var(--muted2)">Todas as linhas da fábrica.</p></li>
+</ol>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="wrap" style="padding-bottom:96px">
+<div class="card" style="border-radius:16px;padding:56px 40px;display:flex;flex-wrap:wrap;gap:40px;align-items:center;justify-content:space-between">
+<div style="flex:1 1 420px;min-width:0">
+<h2 style="font-size:38px;line-height:1.1;margin-bottom:12px">Pare de descobrir a falha depois da parada.</h2>
+<p style="margin:0;color:var(--muted)">Fale com a equipe e monte um piloto do Sentinela na sua linha.</p>
+</div>
+<form id="form" style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<label style="display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C3CBD2">Nome
+<input type="text" required placeholder="Seu nome" style="background:var(--bg);border:1px solid var(--line3);border-radius:6px;padding:12px 14px;color:var(--text);font-size:16px;min-height:44px;font-family:inherit">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C3CBD2">E-mail da empresa
+<input type="email" required placeholder="voce@empresa.com.br" style="background:var(--bg);border:1px solid var(--line3);border-radius:6px;padding:12px 14px;color:var(--text);font-size:16px;min-height:44px;font-family:inherit">
+</label>
+<button type="submit" class="btn" style="justify-content:center;min-height:48px">Solicitar demonstração</button>
+<p id="form-ok" role="status" style="margin:0;font-size:14px;color:#9CCFFF"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer style="border-top:1px solid var(--line)">
+<div class="wrap" style="padding-top:28px;padding-bottom:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted3)">
+<span>Sentinela · Monitoramento inteligente de máquinas</span>
+<span>[SEU NOME / INSTITUIÇÃO] · 2026</span>
+</div>
+</footer>
+
+<script>
+  // Barras do relatório de turno
+  var stops = [['Injetora 07', 42], ['Prensa 03', 18], ['Esteira 02', 9], ['Torno 11', 4]];
+  var max = 42;
+  document.getElementById('bars').innerHTML = stops.map(function (s) {
+    return '<div style="display:flex;align-items:center;gap:12px;font-size:14px">' +
+      '<span style="width:110px;flex:none;color:#C3CBD2">' + s[0] + '</span>' +
+      '<div style="flex:1 1 auto;background:#1B2229;border-radius:4px;height:14px">' +
+      '<div style="height:14px;border-radius:4px;background:#6CB8FF;width:' + Math.round(s[1] / max * 100) + '%"></div></div>' +
+      '<span class="mono" style="width:36px;text-align:right">' + s[1] + '</span></div>';
+  }).join('');
+
+  // Formulário de demonstração (sem servidor no GitHub Pages)
+  document.getElementById('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('form-ok').textContent = 'Obrigado! Entraremos em contato em breve.';
+    e.target.reset();
+  });
+</script>
+</body>
+</html>
